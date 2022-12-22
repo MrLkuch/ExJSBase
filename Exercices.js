@@ -96,3 +96,49 @@ console.log(numbers);
 numbers.pop();
 // affichage du tableau numbers.
 console.log(numbers);
+
+
+
+// Fonctions
+
+// 1
+// fonction qui verifie le modulo du nombre mis en parametre avec si le resultat est 0 la fonction renvoie true, sinon false.
+function pair(num){
+    if(num%2 == 0){
+        return true;
+    }
+    else{
+        return false;
+    }
+
+};
+console.log(pair(6));
+console.log(pair(11));
+
+// 2
+// fonction qui ajoute chaque valeurs d'un tableau additionant valeurs apres valeurs avant de renvoyer la somme total.
+function add(tab) {
+    let result = 0;
+    
+    tab.forEach((element) => {
+        result+=element;
+    });
+
+    return result;
+}
+
+let tableau = [5, 12, 4, 6, 7];
+console.log(add(tableau));
+
+// 3
+/* fonction qui a pour parametre une chaine de caractere, separe chaque caractere et les met dans un tableau,
+puis inverse l'ordre de celui-ci et rejoin chaque element du tableau pour reformé une chaine de caractere. */
+function inverse(chaine){
+    result = chaine.split('');
+    result = result.reverse();
+    result = result.join('');
+    return result;
+};
+
+let phrase = "bonjour";
+console.log(inverse(phrase));
