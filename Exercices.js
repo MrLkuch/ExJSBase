@@ -48,8 +48,11 @@ let concat = `${firstName} ${lastName}`;
 // affichage de la variable concat.
 console.log(concat);
 
-// Conditions
 
+
+
+
+// Conditions
 
 // creation de la variable age et affectation d'une valeur.
 let age = 21 ;
